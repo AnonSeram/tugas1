@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Team Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">Bonita</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Goals</a></li>
+                    <li><a href="#">Private tasks</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <img src="user-avatar.png" alt="Profile Picture">
+                <div class="profile-icon">
+                <p>Muhammad Abdullah</p>
+                <p>muabduh1@gmail.com</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>AI Team Management</h1>
+                <button class="upgrade-btn">Upgrade Plan</button>
+            </header>
+
+            <section class="dashboard">
+                <div class="dashboard-item efficiency">
+                    <h3>Efficiency</h2>
+                    <p>87%</p>
+                    <div class="team">
+                        <img src="team1.jpg" alt="team1">
+                        <img src="team2.jpg" alt="team2">
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="dashboard-item tasks">
+                    <h3>Tasks this week</h2>
+                    <p>15</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 35%;"></div>
+                    </div>
+                    <p class="progress-text">Performance review: 35% left</p>
+                </div>
+
+                <div class="dashboard-item online-time">
+                    <h3>Online time per day</h2>
+                    <p>9.2 h</p>
+                    <p class="increase">Increased compared to last week</p>
+                </div>
+            </section>
+
+            <section class="team-performance">
+                <h2>Team Performance</h2>
+                <canvas id="performanceChart"></canvas>
+            </section>
+
+            <section class="departments">
+                <h2>Departments</h2>
+                <div class="department-boxes">
+                    <div class="department">
+                        <p>UI Designers</p>
+                        <span>23</span>
+                    </div>
+                    <div class="department">
+                        <p>Sales</p>
+                        <span>12</span>
+                    </div>
+                    <div class="department">
+                        <p>SEO</p>
+                        <span>7</span>
+                    </div>
+                </div>
+            </section>
+            
+
+                        <section class="need-review">
+                            <h2>Need Review</h2>
+                            <div class="review-list">
+                                <div class="review-item">
+                                    <p class="review-name">Wade Warren</p>
+                                    <p class="review-position">Marketing Coordinator</p>
+                                </div>
+                                <div class="review-item">
+                                    <p class="review-name">Jakob Jones</p>
+                                    <p class="review-position">Web Designer</p>
+                                </div>
+                                <div class="review-item">
+                                    <p class="review-name">Leslie Wonderwid</p>
+                                    <p class="review-position">PM Manager</p>
+                                </div>
+                            </div>
+                        </section>
+                    <button class="manage-btn">Manage personal</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

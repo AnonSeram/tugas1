@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f6f7fb;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #4b4ce8;
+    margin-bottom: 30px;
+}
+
+.sidebar-footer img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 500; /* Mengatur agar menjadi Poppins Medium */
+}
+
+nav ul li a.active {
+    color: #4b4ce8;
+    font-weight: bold;
+}
+
+.sidebar-footer {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 500; /* Mengatur agar menjadi Poppins Medium */
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 600; /* Mengatur agar menjadi Poppins Medium */
+}
+
+h3 {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 500; /* Mengatur agar menjadi Poppins Medium */
+}
+
+
+.upgrade-btn {
+    background-color: #4b4ce8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.department p {
+    font-family: 'Poppins', sans-serif; /* Mengatur font menjadi Poppins */
+    font-size: 16px; /* Mengatur ukuran font menjadi 16px */
+    font-weight: 550; /* Mengatur berat font menjadi 550 */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.department span {
+    font-size: 16px; /* Pastikan ukuran font untuk angka tetap 16px jika diperlukan */
+}
+
+
+.dashboard {
+    display: flex;
+    gap: 40px;
+}
+
+.progress-text {
+    font-size: 16px; /* Mengubah ukuran font untuk performance review */
+    color: #333; /* Tambahkan warna jika diinginkan */
+}
+
+.increase {
+    font-size: 16px; /* Mengubah ukuran font untuk 'Increased compared to last week' */
+    color: #333; /* Tambahkan warna jika diinginkan */
+}
+
+.dashboard-item {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 26px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 550; /* Mengatur agar menjadi Poppins Medium */
+}
+
+.efficiency, .tasks, .online-time {
+    flex-basis: 30%;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #4b4ce8;
+    border-radius: 10px;
+}
+
+.team img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.add-btn {
+    background-color: #4b4ce8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.team-performance {
+    margin-top: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    height: 200px;
+}
+
+.departments {
+    margin-top: 20px;
+}
+
+.department-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.department {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.need-review {
+    margin-top: 20px;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 550; /* Mengatur agar menjadi Poppins Medium */
+}
+
+.review-name {
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+    font-weight: 650; /* Mengatur agar menjadi Poppins Medium */
+}
+
+.review-item:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.review-position {
+    font-family: 'Poppins', sans-serif; /* Contoh font untuk Marketing Coordinator */
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a9d8f; 
+}
+
+.manage-btn {
+    background-color: #4b4ce8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
